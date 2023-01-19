@@ -1,0 +1,65 @@
+.choice {
+  position: relative;
+  &__bg-black {
+    padding-top: 55px;
+    min-height: 348px;
+    background: #070716;
+  }
+  &__btn {
+    margin-bottom: 26px;
+    color: #070716;
+    background-color: white;
+  }
+  &__title {
+    color: white;
+  }
+  &__subtitle {
+    margin-bottom: 54px;
+    color: white;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__bg-white {
+    background-image: url("../img/substrate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 397px;
+  }
+  &__text {
+    position: absolute;
+    left: 50%;
+    bottom: 143px;
+    transform: translate(-50%, -10px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .choice {
+    &__img {
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .choice {
+    &__img {
+      width: 300px;
+      height: 190px;
+    }
+    &__bg-white {
+      display: none;
+    }
+    &__title {
+      display: none;
+    }
+    &__subtitle {
+      position: absolute;
+      margin-bottom: 0;
+      bottom: 40px;
+    }
+  }
+}
